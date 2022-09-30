@@ -1,14 +1,15 @@
 package br.tutorial.spring.aplicacaospring;
 
-// import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class AplicacaoSpringApplication {
 
 	public static void main(String[] args) {
-		// SpringApplication.run(AplicacaoSpringApplication.class, args);
-		ClassA objetoA = new ClassA(new ClassY());
+		ApplicationContext applicationContext = SpringApplication.run(AplicacaoSpringApplication.class, args);
+		ClassA objetoA = applicationContext.getBean(ClassA.class);
 		objetoA.execute();
 	}
 

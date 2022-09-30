@@ -1,5 +1,8 @@
 package br.tutorial.spring.aplicacaospring;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ClassY implements InterfaceB {
 
     @Override
