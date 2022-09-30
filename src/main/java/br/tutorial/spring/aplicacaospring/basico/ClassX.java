@@ -1,4 +1,4 @@
-package br.tutorial.spring.aplicacaospring;
+package br.tutorial.spring.aplicacaospring.basico;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
